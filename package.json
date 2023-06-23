@@ -1,6 +1,7 @@
 {
 	"name": "sketch-pad",
-	"description": "Drawing",
+	"description": "A VSC that enables drawing, sketching, and note-taking directly within the coding environment",
+	"icon": "media/icon.png",
 	"version": "0.0.1",
 	"publisher": "hankluo6",
 	"private": true,
@@ -16,7 +17,7 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onWebviewPanel:catCoding"
+		"onWebviewPanel:sketchPad"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
