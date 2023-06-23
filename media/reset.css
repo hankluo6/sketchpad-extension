@@ -1,0 +1,95 @@
+html {
+	box-sizing: border-box;
+	font-size: 13px;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+canvas {
+	display: block;
+	margin-bottom: 10px;
+	border: 1px solid;
+	border-radius: 10px;
+}
+
+#hex {
+	width: 50px;
+	height: 30px;
+}
+
+.horizontal-list {
+	display: flex;
+	list-style: none;
+	padding: 0;
+}
+
+.horizontal-list li {
+	margin-right: 10px;
+}
+
+.horizontal-list i,
+.horizontal-list .icon {
+	display: flex;
+	align-items: center;
+}
+
+.horizontal-list i.codicon {
+	font-size: 24px;
+	border: 1px solid #ffffff;
+	padding: 4px;
+}
+
+.horizontal-list input[type="color"] {
+	width: 40px;
+	height: 40px;
+}
+
+.list-container {
+	display: flex;
+}
+
+
+#painter {
+	background-color: transparent;
+	cursor: crosshair;
+}
+
+#image-upload {
+	left: 0;
+	top: 0;
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+
+#confirmation-dialog {
+	display: none;
+}
+  
+.button-container {
+	display: flex;
+	justify-content: center;
+	margin-left: 10px;
+}
+
+.button-container button {
+	width: 60px;
+	height: 30px;
+	margin-right: 10px;
+}
+
+#cursor-circle {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	box-sizing: border-box;
+	transform: translate(-50%, -50%);
+	border-radius: 50%;
+	pointer-events: none; /* Add this line to make the circle element transparent to mouse events */
+	background-color: black; /* Add this line to set the background color to black */
+	z-index: 86;
+}

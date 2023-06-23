@@ -1,0 +1,56 @@
+{
+	"name": "sketch-pad",
+	"description": "Drawing",
+	"version": "0.0.1",
+	"publisher": "hankluo6",
+	"private": true,
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/hankluo6/sketchpad-extension"
+	},
+	"engines": {
+		"vscode": "^1.74.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onWebviewPanel:catCoding"
+	],
+	"main": "./out/extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "sketchPad.start",
+				"title": "Open sketch window",
+				"category": "SketchPad"
+			}
+		],
+		"keybindings": [
+            {
+                "command": "sketchPad.start",
+                "key": "ctrl+shift+v",
+                "mac": "shift+cmd+v"
+            }
+        ]
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"lint": "eslint \"src/**/*.ts\"",
+		"watch": "tsc -w -p ./"
+	},
+	"devDependencies": {
+		"@types/node": "^16.18.34",
+		"@types/vscode": "^1.73.0",
+		"@types/vscode-webview": "^1.57.0",
+		"@typescript-eslint/eslint-plugin": "^5.42.0",
+		"@typescript-eslint/parser": "^5.42.0",
+		"eslint": "^8.26.0",
+		"typescript": "^5.1.3"
+	},
+	"dependencies": {
+		"@vscode/codicons": "^0.0.33"
+	}
+}
